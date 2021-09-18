@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/id/blank-page", {data:[{}],fetch:[],mutations:[]});
