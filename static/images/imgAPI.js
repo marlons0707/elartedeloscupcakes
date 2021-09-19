@@ -38,7 +38,8 @@ const imgAPI = {
     'https://via.placeholder.com/1000x680/e91e63/FFFFFF',
     '/elartedeloscupcakes/images/saas/desktop_illustration.png',
     '/elartedeloscupcakes/images/saas/undraw_tasting_de22.png',
-    '/elartedeloscupcakes/images/saas/undraw_tasting_de22.svg'
+    '/elartedeloscupcakes/images/saas/undraw_tasting_de22.svg',
+    '/elartedeloscupcakes/images/saas/letters_banner.png',
   ]
 }
 

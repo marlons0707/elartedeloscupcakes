@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <v-dialog
+    <!-- <v-dialog
       v-model="dialog"
       max-width="690"
     >
@@ -23,7 +23,7 @@
           />
         </div>
       </v-card>
-    </v-dialog>
+    </v-dialog> -->
     <div class="decoration">
       <svg class="left-deco">
         <use xlink:href="/elartedeloscupcakes/images/saas/deco-bg-left.svg#main" />
@@ -35,7 +35,7 @@
     <v-container :class="{ fixed: isDesktop }">
       <div class="slider-wrap">
         <div class="text">
-          <h3 class="use-text-title">
+          <!-- <h3 class="use-text-title">
             {{ $t('saasLanding.banner_title') }}
             <strong>
               {{ $t('saasLanding.banner_titlestrong') }}
@@ -43,8 +43,8 @@
           </h3>
           <p class="use-text-subtitle">
             {{ $t('saasLanding.banner_subtitle') }}
-          </p>
-          <div class="btn-area">
+          </p> -->
+          <!-- <div class="btn-area">
             <v-btn
               text
               class="play-btn"
@@ -62,7 +62,11 @@
             >
               {{ $t('saasLanding.getstarted') }}
             </v-btn>
-          </div>
+          </div> -->
+        </div>
+        <div>
+          <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[10]" alt="letters">
+          <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[9]" alt="cupcake">
         </div>
         <div class="illustration">
           <img :src="imgAPI.saas[9]" alt="illustration" />
