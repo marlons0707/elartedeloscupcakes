@@ -66,7 +66,9 @@
         </div>
         <div>
           <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[10]" alt="letters">
-          <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[9]" alt="cupcake">
+          <hidden point="mdUp">
+            <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[9]" alt="cupcake">
+          <hidden point="mdUp">
         </div>
         <div class="illustration">
           <img :src="imgAPI.saas[9]" alt="illustration" />
