@@ -51,7 +51,7 @@
           </v-btn>
         </scrollactive>
       </template>
-      <span class="tooltip">To Top</span>
+      <span class="tooltip">Subir</span>
     </v-tooltip>  
   </div>
 </template>

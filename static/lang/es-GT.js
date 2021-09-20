@@ -71,7 +71,7 @@ export default () => {
           "banner_titlestrong": "",
           "banner_subtitle": "Dulzura y sabores deliciosos, plasmados en tus diseños personalizados!",
           "banner_watchvideo": "Watch Video",
-          "getstarted": "Get Started",
+          "getstarted": "Escríbenos",
           "counter_month": "Month",
           "counter_free": "Free Trial",
           "counter_users": "Active Users",
@@ -94,7 +94,7 @@ export default () => {
           "caption_news": "news",
           "caption_event": "event",
           "news_readmore": "read more",
-          "footer_waiting": "What are you waiting for?"
+          "footer_waiting": "¿Y tú, ya hiciste tu pedido?"
         }
       })
     })

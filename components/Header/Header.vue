@@ -119,12 +119,12 @@
               </v-btn> -->
               
               <div class="socmed">
-                <v-btn
+                <!-- <v-btn
                   :href="link.saas.contact"
                   text
                 >
                   {{ $t('saasLanding.header_contact') }}
-                </v-btn>
+                </v-btn> -->
                 <v-btn
                   text
                   icon
@@ -199,7 +199,7 @@ export default {
       menuList: [
         createData(navMenu[0], '#' + navMenu[0]),
         createData(navMenu[1], '#' + navMenu[1]),
-        createData(navMenu[2], '#' + navMenu[2], -40),
+        // createData(navMenu[2], '#' + navMenu[2], -40),
       ]
     }
   },

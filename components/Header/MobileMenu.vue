@@ -35,7 +35,7 @@
 
         <v-divider class="divider-sidebar" />
 
-        <v-list-item
+        <!-- <v-list-item
           v-for="item in ['contact']"
           :key="item"
           :href="link.saas[item]"
@@ -47,7 +47,7 @@
               {{ $t('saasLanding.header_'+item) }}
             </v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
 
         <v-list-item>
           <div class="socmed">

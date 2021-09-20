@@ -1,29 +1,6 @@
 <template>
   <div class="root">
-    <!-- <v-dialog
-      v-model="dialog"
-      max-width="690"
-    >
-      <v-card class="video-popup">
-        <v-card-title class="headline">
-          <h2 class="title">
-            {{ $t('saasLanding.banner_title') }}
-            <v-btn icon @click="handleVideoClose()">
-              <v-icon>mdi-close</v-icon>
-            </v-btn>
-          </h2>
-        </v-card-title>
-        <div class="text-center" v-if="yt.use">
-          <youtube
-            :video-id="videoId"
-            :player-vars="playerVars"
-            :width= "640"
-            :height="360"
-            ref="youtube"
-          />
-        </div>
-      </v-card>
-    </v-dialog> -->
+   
     <div class="decoration">
       <svg class="left-deco">
         <use xlink:href="/elartedeloscupcakes/images/saas/deco-bg-left.svg#main" />
@@ -32,29 +9,12 @@
         <use xlink:href="/elartedeloscupcakes/images/saas/deco-bg-right.svg#main" />
       </svg>
     </div>
+
     <v-container :class="{ fixed: isDesktop }">
       <div class="slider-wrap">
         <div class="text">
-          <!-- <h3 class="use-text-title">
-            {{ $t('saasLanding.banner_title') }}
-            <strong>
-              {{ $t('saasLanding.banner_titlestrong') }}
-            </strong>
-          </h3>
-          <p class="use-text-subtitle">
-            {{ $t('saasLanding.banner_subtitle') }}
-          </p> -->
-          <!-- <div class="btn-area">
-            <v-btn
-              text
-              class="play-btn"
-              @click="handleVideoOpen()"
-            >
-              <span class="icon">
-                <i class="ion-ios-play-outline" />
-              </span>
-              {{ $t('saasLanding.banner_watchvideo') }}
-            </v-btn>
+          <img style="margin-top:-130px; width: 100%" :src="imgAPI.saas[10]" alt="letters">
+          <div style="margin-top:-80px;" class="btn-area">
             <v-btn
               :href="link.saas.login"
               color="secondary"
@@ -62,19 +22,30 @@
             >
               {{ $t('saasLanding.getstarted') }}
             </v-btn>
-          </div> -->
-        </div>
-        <div>
-          <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[10]" alt="letters">
-          <hidden point="mdUp">
-            <img style="margin-top:-100px; width: 100%" :src="imgAPI.saas[9]" alt="cupcake">
-          <hidden point="mdUp">
-        </div>
-        <div class="illustration">
-          <img :src="imgAPI.saas[9]" alt="illustration" />
+          </div>
         </div>
       </div>
+
+      <div>
+        <v-carousel
+          cycle
+          height="400"
+          hide-delimiter-background
+          show-arrows-on-hover
+          style="border-radius: 30px;"
+        >
+          <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
+      </div>
+
     </v-container>
+
     <div class="deco">
       <hidden point="mdDown">
         <div :class="{ hide: hide }" class="deco-inner">
@@ -117,7 +88,22 @@ export default {
         mute: 0,
         origin: 'https://localhost:8008'
       },
-      yt: youtube
+      yt: youtube,
+
+      items: [
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+        },
+      ],
     }
   },
   methods: {

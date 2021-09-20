@@ -10,11 +10,11 @@
         <section id="about">
           <about />
         </section>
-        <section id="gallery">
-          <gallery />
-        </section>
         <section id="services">
           <services />
+        </section>
+        <section id="gallery">
+          <gallery />
         </section>
 
         <!-- <section>

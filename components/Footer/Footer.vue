@@ -114,7 +114,7 @@
               <span class="ion-social-linkedin icon" />
             </v-btn>
           </div>
-          <v-select
+          <!-- <v-select
             :items="langList"
             :value="lang"
             v-model="lang"
@@ -123,7 +123,7 @@
             class="select-lang"
             prepend-inner-icon="mdi-web"
             @change="switchLang(lang)"
-          />
+          /> -->
         </v-col>
       </v-row>
       <p class="body-2 text-center" v-if="isMobile">
@@ -149,11 +149,11 @@ export default {
     lang: 'en',
     footers: [
       {
-        title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#team', '#history', '#contact-us', '#locations']
+        title: 'Empresa',
+        description: ['Equipo', 'Historia'],
+        link: ['#team', '#history']
       },
-      {
+      /* {
         title: 'Resources',
         description: [
           'Resource',
@@ -167,10 +167,10 @@ export default {
           '#another-resource',
           '#final-resource'
         ]
-      },
+      }, */
       {
         title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
+        description: ['Política de privacidad', 'Términos y condiciones'],
         link: ['#privacy-policy', '#terms-of-use']
       }
     ]
